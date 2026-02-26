@@ -19,6 +19,9 @@ body{
     background-color: #585857;
     color:#FFFFFF;
     padding: .6813rem 5rem .4612rem 5.9944rem;
+    margin: auto;
+    
+    
     /*height:10rem ;
     width:100%;
     padding-right: 5rem;*/
@@ -31,6 +34,9 @@ body{
     height: 8.8572rem;
     margin-right: 2.6206rem;
 }
+/*.headermainpart .navitem{
+    margin-right: auto;
+}*/
 
 .headermainpart .navitem .menu{
     display: flex;

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Shine</title>
+</head>
+<body>
+        <header>
+            <div class="mobilesidebar">
+                <nav class="navitem">
+                    <ul class="menu">
+                        <li class="logo-close">
+                            <div class="logo1">
+                                <img src="images/letthemshine.png" alt="" width="114.79px" height="109.83px">
+                            </div>
+                            <div class="close1">
+                                <img class="closebar" onclick="hideSidebar()" src="images/close.png" alt="close">
+                            </div>
+                            
+                        </li>
+                        
+                        <li class="menu-item1">HOME</li>
+                        <li class="menu-item1">ABOUT LTS</li>
+                        <li class="menu-item1">COMMUNITY PARTNERS <img class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow">
+                            
+                        </li>
+                        <li class="menu-item1">PATIENT STORIES<img class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow">
+                            
+                        </li>
+                        <li class="menu-item1">HOW YOU CAN HELP <img class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow">
+                            
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="headermainpart">
+                <div class="headerleftpart">
+                    <img src="images/letthemshine.png" alt="" width="146.91px" height="141.72px">
+                </div>
+                <nav class="navitem">
+                    <ul class="menu">
+                        <li class="menu-item1 hideonmobile">Home</li>
+                        <li class="menu-item2 hideonmobile">ABOUT LTS</li>
+                        <li class="menu-item3 hideonmobile">Community partners <img onclick="showDropdown1()" class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow">
+                            <div class="dropdown1">
+                                <ul>
+                                    <li>Community Partners</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item4 hideonmobile">Patient stories <img onclick="showDropdown2()" class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow">
+                            <div class="dropdown2">
+                             <ul>
+                                <li>Patient Stories</li>
+                                <li>Nominate a Patient</li>
+                             </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item5 hideonmobile">HOW YOU CAN HELP <img onclick="showDropdown3()" class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow" >
+                            <div class="dropdown3">
+                                <ul>
+                                    <li>Donate</li>
+                                    <li>Clinicians - Nominate a Patient</li>
+                                    <li>Amazon Smile</li>
+                                    <li>Become a Partner</li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="menu-close"><img class="menubar" onclick="showSidebar()" src="images/menu.png" alt="menu"></li>
+                    </ul>
+                </nav>
+                
+            </div>
+                
+                
+            
+            
+
+        </header>
+    
+        <!--<div class="mainpart">
+            <div class="leftpart">
+                <p class="para">Unlock the Potential of</p>
+                <h1 class="heading">People's Lives</h1>
+                <p class="para1">Join our mission to provide free dental implant treatment therapy to patients who cannot afford care.</p>
+                <button class="donate">Donate<span>&#8594;</span></button>
+            </div>
+            <div class="rightpart">
+                <div class="gridalign">
+                    <ul class="layoutpart">
+                        <li class="img1"><img src="images/image11.png" alt="img1"></li>
+                        <li class="img2"><img src="images/image22.png" alt="img2"></li>
+                        <li class="img3"><img src="images/image33.png" alt="img3"></li>
+                        <li class="img4"><img src="images/image44.png" alt="img4"></li>
+                        <li class="img5"><img src="images/image55.png" alt="img5"></li>
+                        <li class="img6"><img src="images/image66.png" alt="img6"></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+ <script>
+    function showSidebar(){
+    const menu= document.querySelector(".mobilesidebar");
+    menu.style.display="block";
+    }
+    function hideSidebar(){
+    const menu= document.querySelector(".mobilesidebar");
+    menu.style.display="none";
+    }
+    function showDropdown1(){
+        const dropdown1=document.querySelector(".dropdown1");
+        if(dropdown1.style.display=="none"){
+            dropdown1.style.display="block";
+        }
+        else{
+            dropdown1.style.display="none";
+
+        }
+        
+    }
+    
+    function showDropdown2(){
+        const dropdown2=document.querySelector(".dropdown2");
+        if(dropdown2.style.display=="none"){
+            dropdown2.style.display="block";
+        }
+        else{
+            dropdown2.style.display="none";
+
+        }
+        
+    }
+    function showDropdown3(){
+        const dropdown3=document.querySelector(".dropdown3");
+         if(dropdown3.style.display=="none"){
+            dropdown3.style.display="block";
+        }
+        else{
+            dropdown3.style.display="none";
+
+        }
+        
+    }
+
+ </script>   
+    
+</body>
+</html>

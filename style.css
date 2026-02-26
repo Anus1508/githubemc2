@@ -45,7 +45,7 @@ body{
     
     font-size: 1.125rem;
     font-weight: 600;
-    gap:3.75rem;
+    gap:60px;
     list-style: none;
 }
 .headermainpart .menu-close{
@@ -406,7 +406,7 @@ html{
 
 }
 .mainpart .leftpart .donate{
-    padding: 1.125rem 3rem;
+    padding: 1.125rem ;
     margin-top: 2.5rem;
     background-color: #000000;
     color:#F7D500;
